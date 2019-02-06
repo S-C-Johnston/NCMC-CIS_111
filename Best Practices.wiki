@@ -1,0 +1,13 @@
+Universal best practices
+========================
+
+ - Indent nested blocks of code. Code should be indented by one tab for
+   each successive environment in which it is enclosed.
+ - Open and close a tag or other block structure/matched pair immediately, before
+   even inserting the content between the tags.
+
+CSS
+===
+
+ - Using a class or id with the same name as a keyword is unwise. Avoid
+   if possible.

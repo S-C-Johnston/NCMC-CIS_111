@@ -1,0 +1,126 @@
+Course objectives
+=================
+
+- Translate design document to a static web page
+- Apply a code/test/refine methodology
+- Explain the Document Object Model (DOM)
+- Apply and customize a responsive CSS framework
+- Create accessible forms for user input
+- Design an effective web page layout to convey information to a
+  targeted audience
+  
+Misc
+----
+
+ - Javascript files in cloud storage by some means
+	+ github is valid
+
+Chapter 1 notes
+===============
+
+Components of a web app:
+ - End-user devices, which connect and request site and asset data, and
+   render it locally
+ - Internet infrastructure, which transports data
+ - Web servers, which host sites and assets
+
+Static webpage: the content, minute to minute, is not changing. Upon
+request from a client device, the web server responds with site and
+asset data. On loading an html file, a client will also make requests
+for the assets linked in the file, whereupon the server will then
+respond with asset data.
+
+Dynamic webpage (or app): the content, minute to minute, is subject to
+change. The web server _front end_ will communicate in the _back end_ for dynamic
+content like database results and images.
+
+HTTP
+----
+
+Clients commmunicate with servers by sending HTTP requests with headers.
+The ones we're most concerned with are _GET_ and _POST_. Stack Overflow
+has this to say about [[GET and POST]]. 
+
+Servers communicate with clients by sending HTTP responses, with either
+data or an error.
+
+Browsers
+--------
+
+Browsers include
+ - Google Chrome
+	+ Uses the Chromium open source project as its foundation.
+	+ Sports the popular and fast V8 javascript engine
+ - Mozilla Firefox
+	+ The main open source competitor to Chrome
+ - Microsoft Edge
+ - Microsoft Internet Explorer
+ - Apple Safari
+ - Opera
+
+Server-side scripting language
+------------------------------
+
+Popular langauges for server-side scripting include:
+ - C# and Visual Basic
+ - Java
+ - Ruby
+ - PHP
+ - Perl
+ - Javascript
+ - Python
+
+JavaScript
+----------
+
+No relation to the Java language.
+
+A fully featured language built to be embedded or shipped with site
+data, in webpages, among other uses it provides features as:
+ - Data Validation
+ - Image Swap and Rollover
+ - Accordions
+
+HTML
+----
+
+A HyperText Markup Language built for describing the structure of a document to be
+rendered by a web browser.
+
+Markup is communicated through tags, which usually are matched, and
+usually take the form of an open tag ```<tag>``` and a closing tag
+```</tag>```.  Tags can carry extra information called "attributes". An
+attribute which can be communicated by the html tag is lang, and it is
+expressed as lang="language code", in our case lang="en", for english.
+
+An HTML document starts with a unmatched tag ```<!doctype html>```. This
+will be followed by the matched tag, ```html```. HTML wraps around
+```head``` and ```body```.
+
+Headings of various levels can be conveyed with heading tags. These take
+the form of ```h1``` through ```h6``` (or h7, unclear on how many
+headings are recognized).
+
+An image can be linked with the unmatched ```img``` tag, which has the
+attributes ```src``` and ```alt```. src indicates the source file in
+relation on the server to the html file serving the img tag. alt's value
+provides alternate text. This can often be seen while hovering over an
+image, but it is intended for when an image breaks or fails to load, and
+it is espcially useful for accessibility, such as for visually impaired
+people.
+
+Paragraph tags ```p``` are matched and wrap around paragaph sections.
+
+CSS
+---
+
+Can be embedded or linked as an external document. Best practice is to
+keep css for a page in one place. This is done in the head environment
+in an HTML document, with the ```link``` tag, carrying the attributes
+```rel="stylesheet"``` and ```href="filepath.css"```.
+
+CSS syntax usually takes the form of:
+```element-name {
+	style-fields: style-value;
+	...
+}```

@@ -1,0 +1,64 @@
+Code, Test, Refine
+==================
+
+Basic structure of HTML5 document:
+
+ 1. ```<!DOCTYPE html>``` The doctype declaration, of which there are
+    maybe a dozen varieties.
+ 2. ```<html>``` Open tag for html
+ 3. ```<head>``` Head open tag
+ 4. ```</head>``` Head closing tag
+ 5. ```<body>``` Body open tag
+ 6. ```</body>``` Body closing tag
+ 7. ```</html>``` Closing tag for html
+
+General coding recommendations
+ - All coding should be in lowercase, especially referencing file names.
+   Many web servers run on case-sensitive filesystems.
+ - File names should not have spaces; they complicate using those files,
+   requiring quoting or escaping.
+   
+Tags
+----
+
+Tags are keywords, which are enclosed in angle brackets, ``<tag>``.
+
+Empty or standalone tags exist without a partner, and may take
+arguments/parameters/attributes. The ``img`` tag, for instance, would
+have a ``src=`` and an ``alt`` attribute.
+
+Open/closing tag structure follows the same premise, where a matched
+pair opens and closes an environment or group. A closing tag usually
+resembles an open tag, with a ``/`` prepended to the tag proper. For
+example:
+```<h1>Text formatted as heading 1</h1>```
+
+When tags are nested, for example, a word in a paragraph being
+emphazised, the closing tag for the inner or nested tag should be closed
+before the outer tag is closed. ```<p><i>Italic words!</i></p>```
+
+Common errors:
+ - Unmatched tags. This can be avoided by coding both the matched tags
+   in one shot, and then inserting the content needed between those
+   tags.
+   
+[[Best Practices]]
+
+Attributes
+----------
+
+Attributes usually take a form similar to variable initialization, where
+the attribute is given as a bareword followed by an assignment operator,
+which is to say, the equals sign, and then followed by the value, which
+only _needs_ to be wrapped in quotes _if_ it has spaces. However,
+wrapping any given value in quotes won't break anything, so it is good
+practice to wrap all values in quotes. For example:
+```attribute="value"```
+
+A boolean attribute is usually entered as just the bareword.
+```checked``` is one such example.
+
+Two special attributes are ``id`` and ``class``. ``class`` is referenced
+by CSS, to assign styles. Many tags can have the same class. ``id`` is
+also referenced by CSS, but generally by javascript to identify an
+element, and only one element can have a given id.
