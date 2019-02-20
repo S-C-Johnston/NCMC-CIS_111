@@ -24,3 +24,17 @@ Title tags
   accessible to mobile users.
 
 - Matched tags, seen as ``<title>``
+
+Block elements vs inline elements
+---------------------------------
+
+- Block elements are meant to cover an entire width of the screen, and
+  inline elements must exist nested inside a block element.
+
+- Paragraph tag: ``<p>`` matched block tags, define, semantically, a
+  paragraph of content. Does not care about whitespace in html.
+- Pre-formatted tag: ``<pre>`` matched block tags, useful for making
+  literal text and whitespace show on the screen as close as possible to
+  how it is formatted in the html source.
+- Blockquote tag: ``<blockquote>`` more matched block tags. Another
+  semantic tag which can be styled to taste.
