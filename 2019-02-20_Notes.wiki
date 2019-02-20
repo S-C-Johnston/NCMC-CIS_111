@@ -14,3 +14,13 @@ Objectives
 - Distinguish between ``<a>`` and ``<img>`` and their accessibility
   guidelines
 - Describe the two types of lists
+
+Title tags
+----------
+
+- Title shows up in the tab-bar as the title of the tab. Search engines
+  will tend to bias towards shorter titles, so no more than 65
+  characters is good practice, but even shorter titles are more
+  accessible to mobile users.
+
+- Matched tags, seen as ``<title>``
