@@ -1,0 +1,16 @@
+Objectives
+==========
+
+- Distinguish between block and inline elements
+- Describe the use of h1..h3 and p
+- Describe the use of br, i, b, sup, em, q, and strong in the context of
+  semantic 
+- Describe the use of character entities like ``&nbsp;`` or ``&copy;``
+- Describe the use of id, class and title
+- Describe the use of div and span
+- Describe the use of semantic elements: header, main, section, article,
+  nav, aside, footer, figure
+- Distinguish between relative and absolute paths and URLs
+- Distinguish between ``<a>`` and ``<img>`` and their accessibility
+  guidelines
+- Describe the two types of lists
