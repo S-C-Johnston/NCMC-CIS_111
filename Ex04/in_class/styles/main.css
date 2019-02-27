@@ -26,4 +26,8 @@ main {
 	clear: left;
 }
 
+main h1 {
+	font-size: 150%;
+}
+
 /* the styles for the footer */
