@@ -39,4 +39,8 @@ main h3 {
 	font-size: 105%;
 }
 
+main link::hover, link::focus {
+	font-style: italic;
+}
+
 /* the styles for the footer */
