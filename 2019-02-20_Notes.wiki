@@ -38,3 +38,10 @@ Block elements vs inline elements
   how it is formatted in the html source.
 - Blockquote tag: ``<blockquote>`` more matched block tags. Another
   semantic tag which can be styled to taste.
+
+Element kind
+------------
+
+I've been calling them "matched" vs "unmatched" elements. The correct
+term for unmatched elements is "void" elements. This is because they
+cannot have any child elements, only the attributes defined as valid.
