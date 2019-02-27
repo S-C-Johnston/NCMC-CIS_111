@@ -35,4 +35,8 @@ main h2 {
 	color: #800000;
 }
 
+main h3 {
+	font-size: 105%;
+}
+
 /* the styles for the footer */
