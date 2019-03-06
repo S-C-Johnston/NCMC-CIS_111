@@ -23,3 +23,12 @@ h1, h2, h3, h4, h5, h6 {
 main > h1:first-child::first-letter {
 	font-size: 200%;
 }
+
+a {
+	font-weight: bold;
+	color: orange;
+}
+
+a:hover, a:focus {
+	color: green;
+}
