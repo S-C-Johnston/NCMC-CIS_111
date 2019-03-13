@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	border-bottom-width: small;
+	border-bottom-width: medium;
 	border-bottom-style: solid;
 	border-bottom-color: black;
 }
@@ -55,7 +55,7 @@ header, footer {
 footer {
 	font-size: 70%;
 	text-align: center;
-	border-top-width: small;
+	border-top-width: medium;
 	border-top-style: solid;
 	border-top-color: black;
 }
