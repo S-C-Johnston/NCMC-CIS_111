@@ -22,14 +22,19 @@ header {
 
 header > img {
 	float: left;
+	padding-right: 1em;
 }
 
-header > h2, h3 {
-	text-indent: 5em;
+header > h2 {
+	padding-top: 0.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 16pt;
+}
+
+main {
+	margin-left: 1em;
 }
 
 main > h1:first-child::first-letter {
@@ -56,4 +61,8 @@ footer {
 	border-top-style: solid;
 	border-top-color: black;
 	background-image: linear-gradient(45deg, black, orange 25%, white 100%);
+}
+
+footer > p {
+	padding: 0.5em;
 }
