@@ -1,3 +1,7 @@
+:root {
+	--left-column-width: 160px;
+}
+
 html {
 	background-image: url('../images/bats.gif');
 	background-repeat: repeat;
@@ -33,8 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16pt;
 }
 
+nav {
+	float: left;
+	width: var(--left-column-width);
+}
+
 main {
-	margin-left: 1em;
+	margin-left: var(--left-column-width);
 }
 
 main > h1:first-child::first-letter {
@@ -55,6 +64,7 @@ li {
 }
 
 footer {
+	clear: both;
 	font-size: 70%;
 	text-align: center;
 	border-top-width: medium;
