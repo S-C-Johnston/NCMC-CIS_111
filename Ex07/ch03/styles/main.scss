@@ -1,5 +1,5 @@
 :root {
-	--left-column-width: 160px;
+	--left_column_width: 160px;
 }
 
 html {
@@ -45,7 +45,7 @@ nav {
 }
 
 main {
-	margin-left: var(--left-column-width);
+	margin-left: var(--left_column_width);
 	> h1:first-child::first-letter {
 		font-size: 200%;
 	}
