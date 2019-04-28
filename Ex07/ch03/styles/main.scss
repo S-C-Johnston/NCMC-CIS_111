@@ -44,15 +44,75 @@ h2, h3, h4, h5, h6 {
 }
 
 nav {
-
 	ul {
 		padding: 0;
 		list-style: none;
+		margin: 0;
+		li {
+			a {
+				text-decoration: none;
+				display: block;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+				&.you_are_here {
+					color: orange !important;
+					background-color: black;
+				}
+			}
+		}
+	}
+
+	&#top_bar {
+		--item_width: calc(100% / 5);
+		> ul {
+			li {
+				background-color: black;
+				text-align: center;
+				width: 100%;
+				display: block;
+				position: relative;
+				ul {
+					display: none;
+				}
+				&:hover, &:focus {
+					background-color: grey;
+					> ul {
+						display: block;
+						width: 100%;
+						position: absolute;
+						top: 100%;
+					}
+				}
+			}
+			a {
+				color: white;
+			}
+			> li {
+				width: var(--item_width);
+				float: left;
+			}
+		}
+		> ul::after {
+			content: "";
+			clear: both;
+			display: block;
+		}
 	}
 
 	&#product_categories {
+		padding: 1em;
 		float: left;
 		width: var(--left_column_width);
+		li {
+			margin: 0.35em auto;
+			background-color: orange;
+			border: 2px solid black;
+			text-indent: 0.5em;
+		}
+		a {
+			color: black;
+			font-weight: bold;
+		}
 	}
 }
 
