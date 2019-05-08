@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>
+			Johnston Metalwork Inc. index
+		</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,
+		initial-scale=1">
+		<meta name="author" content="Stewart Johnston">
+		<link href="styles/wireframe.css" rel="stylesheet">
+		<script src="scripts/jquery-3.4.1.min.js"></script>
+
+		<script>
+			<!-- https://stackoverflow.com/a/31837264 -->
+			$(function(){ var includes = $('[data-include]');
+				jQuery.each(includes,
+					function(){ var file = 'views/' +
+							$(this).data('include') + '.html';
+						$(this).load(file);
+					});
+				<!-- https://css-tricks.com/snippets/jquery/add-active-navigation-class-based-on-url/ -->
+				$(function(){
+					$('nav a[href="' +
+						location.pathname.split("part_2/")[1] +
+						'"]').addClass('you_are_here');
+					$(console.log(location.pathname.split('part_2/')));
+				});
+			});
+		</script>
 	</head>
 	<body>
-		<header>
+		<header data-include="header">
 		</header>
 		<main>
+			Hello World!
 		</main>
-		<footer>
+		<footer data-include="footer">
 		</footer>
 	</body>
 </html>
